@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>Resultado del formulario</title>
+</head>
+<body>
+    {% block content %}
+    <div class="parrafo">
+        <br>
+        <h1 class="main__end">Gracias por rellenar el formulario</h1>
+        <br><br>
+        <ul class="result-info">
+            <li class="result-info__item">
+                <p>Nombre:  {{name}}</p>
+            </li>
+            <li class="result-info__item"></li>
+                <p>E-mail:  {{email}}</p>
+            </li>
+            <li class="result-info__item">
+                <p>Direccion:  {{address}}</p>
+            </li>
+            <li class="result-info__item">
+                <p>Fecha:  {{date}}</p>
+            </li>
+        </ul>
+    </div>
+    {% endblock %}
+</body>
+</html>
